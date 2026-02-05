@@ -1,20 +1,7 @@
 [project]
-name = "chimera-factory"
+name = "tenacious-project-chimera"
 version = "0.1.0"
-description = "Autonomous Influencer Factory for Project Chimera"
-authors = [{ name = "FDE Trainee" }]
-dependencies = [
-    "mcp-sdk>=1.2.0",        # For Tool/Resource connectivity
-    "coinbase-agentkit",    # For Agentic Commerce
-    "pydantic>=2.0",        # For Spec validation
-    "weaviate-client",      # For Semantic Memory
-    "pytest",               # For TDD approach
-    "fastapi",              # For Orchestrator API
-]
-
-[tool.uv]
-managed = true
-python-version = "3.12"
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
