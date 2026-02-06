@@ -1,5 +1,5 @@
 import pytest
-from src.skills.trend_fetcher import fetch_trends # This import will fail initially
+from .skills import skill_trend_fetcher # This import will fail initially
 
 def test_trend_fetcher_schema():
     """

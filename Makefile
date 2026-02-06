@@ -1,8 +1,13 @@
-setup: # Installs dependencies [cite: 117]
-	uv pip install .
+.PHONY: setup test docker-build
 
-test: # Runs failing tests in Docker [cite: 118]
-	docker run --rm chimera-agent pytest tests/
+# Task 3.2: Local environment setup
+setup:
+	uv pip install -e .
 
-spec-check: # Verifies code aligns with specs [cite: 119]
-	python scripts/spec_validator.py  
+# Task 3.2: Build and run the TDD suite
+test:
+	docker build -t chimera-agent .
+	docker run --rm chimera-agent python -m pytest tests/
+
+# To run the makefile, type 'make test' in your terminal, NOT './makefile'
+
