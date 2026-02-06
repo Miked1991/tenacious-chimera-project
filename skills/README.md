@@ -1,5 +1,13 @@
-# Skill 1: skill_trend_fetcher - Ingests real-time trend data
+#
 
-## Skill 2: skill_download_youtube - Media acquisition
+## skill_trend_fetcher
 
-### Skill 3: skill_transcribe_audio - Multimodal conversion
+- Analyzes social APIs for high-velocity topics
+
+### skill_download_video
+
+- Handles multi-platform media acquisition
+
+### skill_transcribe_audio
+
+- Converts media for reasoning and script generation

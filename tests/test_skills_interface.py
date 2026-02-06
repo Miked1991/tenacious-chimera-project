@@ -19,4 +19,4 @@ def test_transcriber_input_contract():
         pytest.fail("Skill interface not initialized")
     except Exception as e:
         # Success for TDD: the skill exists but logic is missing
-        passC V
+        pass

@@ -1,34 +1,13 @@
-# Technical Specifications
+# technical specifications
 
-## API Contracts
+## Pattern
 
-### Trend Fetcher API
+- Hierarchical Swarm (Planner, Worker, Judge)
 
-```json
-{
-  "endpoint": "/api/v1/trends/fetch",
-  "method": "POST",
-  "request": {
-    "platforms": ["youtube", "twitter", "tiktok"],
-    "region": "string",
-    "categories": ["entertainment", "technology", "lifestyle"],
-    "max_results": 50
-  },
-  "response": {
-    "trends": [
-      {
-        "id": "uuid",
-        "platform": "string",
-        "title": "string",
-        "engagement_score": "float",
-        "velocity": "float",
-        "metadata": {
-          "hashtags": ["string"],
-          "mentions": ["string"],
-          "video_urls": ["string"]
-        },
-        "timestamp": "datetime"
-      }
-    ]
-  }
-}
+### API Contracts
+
+- JSON schemas for task_id, task_type, and confidence_score
+
+### Database
+
+- PostgreSQL for transactional data and Weaviate for semantic memory
