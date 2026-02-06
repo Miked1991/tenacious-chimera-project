@@ -19,10 +19,14 @@ jobs:
     
     - name: Install uv
       run: pip install uv
+
+    - name: Create virtual environment
+      run: python -m venv venv
     
     - name: Install dependencies
       run: make setup
     
+
     - name: Run tests
       run: make test
     
